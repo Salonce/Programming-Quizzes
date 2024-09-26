@@ -1,0 +1,105 @@
+[{  
+    "id": 1,
+    "question": "Which is more lightweight?",
+    "good_answer": "A container",
+    "wrong_answer": "A virtual machine",
+    "explanation": "Containerization is lighter by the kernel."
+},
+{
+    "id": 2,
+    "question": "Which one does a container include?",
+    "correct_answers": [
+        "Essential System Libraries: Basic libraries required by almost all applications, such as libc.",
+        "File System Structure: A standard Linux directory structure (/bin, /etc, /var, etc.) where the application can place files and look for configuration.",
+        "Basic Utilities: Core utilities like sh, cp, ls, and network utilities, useful for simple maintenance tasks inside the container.",
+        "Dependency Management: A package manager (e.g., apk in Alpine) to install other software the application might need."
+    ],
+    "incorrect_answers": [
+        "Kernel."
+    ],
+    "explanation": "Unlike a virtual machine, containers use the host machine's kernel, which handles system-level operations. Thanks to that Docker containers are lightweight and fast."
+},
+{
+    "id": "3",
+    "question": "Which statements about resource management (CPU, memory, storage) are true?",
+    "correct_answers": [
+        "Resource sharing between VMs is limited.",
+        "Resource allocation for containers is flexible and can be dynamic.",
+        "Resources of one VM cannot be easily used by another VM without reconfiguration."
+    ],
+    "incorrect_answers": [
+        "Resources for containers are pre-allocated and fixed.",
+        "Resource limits for containers are set by default."
+    ]
+},
+{
+    "id": 4,
+    "question": "",
+    "correct_answers": [
+        ""
+    ],
+    "incorrect_answers": [
+    "",
+    "",
+    "",
+    ""
+    ]
+},
+{
+    "id": 5,
+    "question": "",
+    "correct_answers": [
+        ""
+    ],
+    "incorrect_answers": [
+    "",
+    "",
+    "",
+    ""
+    ]
+},
+
+
+
+
+{
+    "id": 3,
+    "question": "Is containerization or virtualization more lightweight?",
+    "good_answer": "Containerization is more leightweight",
+    "wrong_answer": "Virtualization is more lightweight",
+    "explanation": "VirtualizationVirtualization creates fully isolated virtual machines with separate operating systems, while containerization shares the host OS kernel and isolates at the application level. That means containerization is lighter by the kernel."
+},
+
+{
+    "id": 2,
+    "question": "How is virtualization different from containerization?",
+    "correct_answers": [
+        "Virtualization creates fully isolated virtual machines with separate operating systems, while containerization shares the host OS kernel and isolates at the application level."
+    ],
+    "incorrect_answers": [
+    "Virtualization is faster and more lightweight than containerization.",
+    "Containerization requires a separate operating system for each container, while virtualization doesn't.",
+    "Virtualization is used only for web applications, while containerization is for desktop applications.",
+    "Containerization provides stronger isolation than virtualization.",
+    "Virtualization is a newer technology developed to replace containerization."
+    ]
+},
+
+{
+    "id": 3,
+    "question": "Why did Docker become so popular? What problems has it solved?",
+    "correct_answers": [
+        "Docker simplified application deployment by packaging applications with their dependencies.",
+        "It improved consistency between development and production environments, reducing 'it works on my machine' issues.",
+        "Docker containers are lightweight and start quickly, enabling efficient resource utilization.",
+        "It facilitated microservices architecture by making it easy to deploy and scale individual services.",
+        "Docker improved portability, allowing applications to run consistently across different platforms and cloud providers."
+    ],
+    "incorrect_answers": [
+        "Docker eliminated the need for virtual machines in all use cases.",
+        "It provided a way to run Windows applications natively on Linux systems.",
+        "Docker automatically optimized application code for better performance.",
+        "It replaced the need for version control systems in software development.",
+        "Docker solved security issues by making all containerized applications inherently secure."
+    ]
+}]
